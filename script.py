@@ -7,10 +7,10 @@ letters = string.ascii_letters
 letters += string.punctuation
 letters += string.digits
 
-flag = "C"
+flag = "?" # <- I Letter
 old_num = 346
 
-while flag[-1] != "}":
+while flag[-1] != "?": # <- Last letter
 	for i in letters:
 		test = flag + i
 		r.sendlineafter(":", test)
